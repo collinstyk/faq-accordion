@@ -1,0 +1,129 @@
+@font-face {
+  font-family: "WorkSans-Variable";
+  src: url("./assets/fonts/WorkSans-VariableFont_wght.ttf");
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.App {
+  height: 100vh;
+  background-color: hsl(275, 100%, 97%);
+}
+
+.top {
+  height: 32%;
+  background-image: url("./assets/images/background-pattern-desktop.svg");
+}
+
+.bottom {
+  background-color: hsl(275, 100%, 97%);
+  height: 390px;
+  margin-bottom: 10rem;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 130px;
+  padding-bottom: 1rem;
+  font-size: 18px;
+  color: hsl(292, 42%, 14%);
+}
+
+.title span {
+  background-image: url("./assets/images/icon-star.svg");
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.faqs {
+  width: 80%;
+  margin: auto;
+  background-color: hsl(0, 0%, 100%);
+  position: relative;
+  top: -100px;
+  font-family: "WorkSans-Variable", sans-serif;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 5px 5px #838383;
+}
+
+.faqs ul {
+  list-style: none;
+}
+
+.faqs li {
+  padding: 1rem 0;
+  font-weight: bold;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #f1f1f1;
+}
+
+.question {
+  color: hsl(292, 42%, 14%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.question:hover,
+.question:active {
+  color: hsl(293, 58%, 50%);
+}
+
+.question p {
+  width: 80%;
+  font-size: 0.9rem;
+}
+
+.icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-size: 25px;
+  background-position: center right;
+  background-repeat: no-repeat;
+  padding: 0;
+}
+
+.icon-open {
+  background-image: url("./assets/images/icon-plus.svg");
+}
+
+.icon-close {
+  background-image: url("./assets/images/icon-minus.svg");
+}
+
+.answer {
+  color: hsl(292, 16%, 49%);
+  font-weight: 400;
+  font-size: 12px;
+  padding: 15px 0 0;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (min-width: 40rem) {
+  .faqs {
+    width: 60%;
+  }
+}
+
+@media (min-width: 64rem) {
+  .faqs {
+    width: 40%;
+  }
+}
